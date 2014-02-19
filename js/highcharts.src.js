@@ -10690,7 +10690,8 @@ Legend.prototype = {
 			spaceHeight /= 2;
 		}
 		if (maxHeight) {
-			spaceHeight = mathMin(spaceHeight, maxHeight);
+			// DABEDUR CUSTOM
+			spaceHeight = mathMax(spaceHeight, maxHeight);
 		}
 		
 		// Reset the legend height and adjust the clipping rectangle
